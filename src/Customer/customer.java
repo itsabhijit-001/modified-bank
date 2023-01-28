@@ -2,7 +2,7 @@ package Customer;
 
 import java.util.Scanner;
 
-public class customer {
+public class customer extends account implements Validation{
     String Name,Username,Password,SSN,Address,Email;
     int Age;
     float Balance;
@@ -162,6 +162,14 @@ public class customer {
         this.Password=password;
         System.out.println("Password successfully changed.");
 
+        
+    }
+
+
+
+    @Override
+    public void display() {
+        System.out.println("Account details displayed.");
         
     }
 

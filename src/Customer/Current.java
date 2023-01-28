@@ -1,5 +1,6 @@
+package Customer;
 public class Current extends account{
-    // float minimumBalance=0.0f;
+    
     public Current(){
         super();
         super.minimumBalance=0;
