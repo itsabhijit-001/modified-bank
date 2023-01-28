@@ -21,6 +21,37 @@ public class customer {
         System.out.println("Successfully Signed up.");
         
     }
+
+
+    
+    public boolean validateAge(int age){
+        if(age>=18){
+            System.out.println("You are eligible to open bank account.");
+            return true;
+
+        }
+        else{
+
+            System.out.println("Oops!! sorry you are not eligible to open account you are undered age.");
+            return false;
+
+        }
+
+     }
+
+    public boolean validateSSN(String ssn){
+        if(ssn.length()==9){
+            System.out.println("Congratulations!! correct SSN. ");
+            return true;
+        }
+        else{
+            System.out.println("Oops wrong SSN please enter any valid SSN");
+            return false;
+        }
+    }
+
+
+
     public void login() {
 
         Scanner scan2=new Scanner(System.in);

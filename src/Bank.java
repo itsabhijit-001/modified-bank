@@ -18,15 +18,27 @@ public class Bank {
 
         System.out.println("Enter email id ");
         String email=scan.nextLine();
+        while(true){
+            System.out.println("Enter your SSN ");
+            String ssn=scan.nextLine();
+            if(c1.validateSSN(ssn)){
+                break;
+            }
 
-        System.out.println("Enter your SSN ");
-        String ssn=scan.nextLine();
+
+        }
+
 
         System.out.println("Enter your address (only city name) ");
         String address=scan.nextLine();
+        while(true){
 
-        System.out.println("Enter your age ");
-        int age=scan.nextInt();
+            System.out.println("Enter your age ");
+            int age=scan.nextInt();
+            if(c1.validateAge(age)){
+                break;
+            }
+        }
 
         System.out.println("Enter your phone number ");
         long phone=scan.nextLong();
