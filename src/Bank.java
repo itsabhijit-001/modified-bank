@@ -91,13 +91,12 @@ public class Bank {
                 default:
                     System.out.println("Ooops !!! Wrong input selected.");
                     System.out.println("Please select some valid input.");
-                    break;
             }
             System.out.println();
             
             System.out.println("Do you want to continue? (type 'yes' or 'no') ");
-//            val=scan.nextLine();
-        }while(val.equals(scan.nextLine()) );
+            val=scan.nextLine();
+        }while(val.equals("yes") );
         c1.login();
 
         scan.close();

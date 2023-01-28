@@ -7,7 +7,6 @@ public class customer {
     int Age;
     float Balance;
     long Phone;
-    Scanner scan2=new Scanner(System.in);
     public void signUp(String Name,String Username,String Password,String SSN,String Address,
                         String Email,int Age,float Balance,long Phone) {
         this.Name=Name;
@@ -23,6 +22,8 @@ public class customer {
         
     }
     public void login() {
+
+        Scanner scan2=new Scanner(System.in);
         System.out.println("Enter your user name : ");
         String uName=scan2.nextLine();
         System.out.println("Enter your password");
@@ -40,6 +41,7 @@ public class customer {
             
 
         }
+        scan2.close();
     }
     public void deposit(float amount) {
         this.Balance+=amount;
@@ -57,6 +59,7 @@ public class customer {
     }
     public void editProfile() {
 
+        Scanner scan2=new Scanner(System.in);
     
         System.out.println("Please choice the option below which you want to edit :");
         System.out.println("1. Name");
@@ -116,10 +119,10 @@ public class customer {
                     
                 System.out.println("Ooops !!! Wrong input selected.");
                 System.out.println("Please select some valid input.");
-                break;
 
             
         }
+       scan2.close();
     
         System.out.println();
         
